@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 module ActiveAdmin
-  class BaseController < ::InheritedResources::Base
+  class BaseController < ActionController::Base
     module Menu
       extend ActiveSupport::Concern
 
