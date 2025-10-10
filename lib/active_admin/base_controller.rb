@@ -15,7 +15,7 @@ module ActiveAdmin
 
     class << self
       # Ensure that this method is available for the DSL
-      public :actions
+      public :actions if respond_to?(:actions)
 
       # Reference to the Resource object which initialized
       # this controller
