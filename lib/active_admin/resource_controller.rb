@@ -8,6 +8,8 @@ require "active_admin/resource_controller/scoping"
 require "active_admin/resource_controller/streaming"
 require "active_admin/resource_controller/sidebars"
 require "active_admin/resource_controller/resource_class_methods"
+require 'inherited_resources'
+
 
 module ActiveAdmin
   # All Resources Controller inherits from this controller.
