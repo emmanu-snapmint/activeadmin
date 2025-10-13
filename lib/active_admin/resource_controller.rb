@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require 'inherited_resources'
 require "active_admin/collection_decorator"
 require "active_admin/resource_controller/action_builder"
 require "active_admin/resource_controller/data_access"
@@ -20,7 +19,6 @@ module ActiveAdmin
     respond_to :html, :xml, :json
     respond_to :csv, only: :index
 
-    include InheritedResources::Base
     include ActionBuilder
     include Decorators
     include DataAccess
