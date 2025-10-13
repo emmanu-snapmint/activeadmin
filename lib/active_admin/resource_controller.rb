@@ -20,7 +20,7 @@ module ActiveAdmin
     respond_to :html, :xml, :json
     respond_to :csv, only: :index
 
-    include InheritedResources::DSL
+    include InheritedResources::Base
     include ActionBuilder
     include Decorators
     include DataAccess
